@@ -28,7 +28,6 @@ pycparser==2.21
 pygame==2.5.2
 Pygments==2.17.2
 pypiwin32==223
-pywin32==306
 referencing==0.32.0
 requests==2.31.0
 rpds-py==0.13.2
