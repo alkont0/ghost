@@ -8,7 +8,7 @@ from base64 import urlsafe_b64encode, urlsafe_b64decode
 from os import urandom
 
 app = Flask(__name__)
-CORS(app, origins=["http://127.0.0.1:5000/encrypt"])
+CORS(app, origins=["https://127.0.0.1:5000/encrypt", "https://127.0.0.1:5000"])
 
 # JSON Schema للتحقق من بنية البيانات
 schema = {
@@ -45,3 +45,4 @@ def encrypt_api():
     formatted_key = ", ".join(map(str, key))
     response = {'encrypted_text': encrypted_text, 'key': formatted_key}
     return jsonify(response)
+
